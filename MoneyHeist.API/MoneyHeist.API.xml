@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MoneyHeist.API</name>
+    </assembly>
+    <members>
+        <member name="M:MoneyHeist.API.Controllers.HeistController.GetAllHeists">
+            <summary>
+            Get all heist
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MoneyHeist.API.Controllers.HeistController.GetHeistByIdAsync(System.Int32)">
+            <summary>
+            Get heist by id
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MoneyHeist.API.Controllers.HeistController.GetHeistMembersAsync(System.Int32)">
+            <summary>
+            Get heist members
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MoneyHeist.API.Controllers.HeistController.GetHeistStatusAsync(System.Int32)">
+            <summary>
+            Get heist status
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MoneyHeist.API.Controllers.HeistController.GetHeistSkillsAsync(System.Int32)">
+            <summary>
+            Get heist skills
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MoneyHeist.API.Controllers.HeistController.AddHeistAsync(MoneyHeist.Models.Dtos.HeistDto)">
+            <summary>
+            Add new heist
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MoneyHeist.API.Controllers.HeistController.UpdateMemberSkillsAsync(System.Int32,MoneyHeist.Models.Dtos.SkillsDto[])">
+            <summary>
+            Add or update member skills
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MoneyHeist.API.Controllers.HeistController.GetEligibleMembersAsync(System.Int32)">
+            <summary>
+            View members eligible to participate in a heist
+            /// </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MoneyHeist.API.Controllers.HeistController.ConfirmMembersAsync(System.Int32,MoneyHeist.Models.Dtos.MemberDto[])">
+            <summary>
+            Confirm members that should participate in a heist
+            /// </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MoneyHeist.API.Controllers.HeistController.StartHeistManuallyAsync(System.Int32)">
+            <summary>
+            Start a heist manually
+            /// </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MoneyHeist.API.Controllers.MembersController.GetMembersAsync">
+            <summary>
+            Get all heist members
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MoneyHeist.API.Controllers.MembersController.GetMemberByIdAsync(System.Int32)">
+            <summary>
+            Gets a member by user ID
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MoneyHeist.API.Controllers.MembersController.GetMembersSkillsAsync(System.Int32)">
+            <summary>
+            Get members skills
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MoneyHeist.API.Controllers.MembersController.AddMemberAsync(MoneyHeist.Models.Dtos.MemberDto)">
+            <summary>
+            Add a potential heist member
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MoneyHeist.API.Controllers.MembersController.UpdateMemberSkillsAsync(System.Int32,MoneyHeist.Models.Dtos.SkillsDto[],System.String)">
+            <summary>
+            Update member skills
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MoneyHeist.API.Controllers.MembersController.RemoveMembersSkillAsync(System.Int32,System.String)">
+            <summary>
+            Remove a member's skill
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

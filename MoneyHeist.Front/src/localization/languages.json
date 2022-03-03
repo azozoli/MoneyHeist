@@ -1,0 +1,16 @@
+{
+	"english": {
+		"name": "English",
+		"code": "en-GB",
+		"shortLabel": "EN",
+		"isDefault": "false",
+		"dateTimeFormat": "dd/MM/yyyy HH:mm"
+	},
+	"croatian": {
+		"name": "Croatian",
+		"code": "hr-HR",
+		"shortLabel": "HR",
+		"isDefault": "true",
+		"dateTimeFormat": "dd.MM.yyyy HH:mm"
+	}
+}

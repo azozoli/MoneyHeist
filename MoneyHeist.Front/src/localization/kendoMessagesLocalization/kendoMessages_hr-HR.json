@@ -1,0 +1,56 @@
+{
+    "datepicker": {
+        "toggleCalendar": "Otvori kalendar"
+    },
+    "calendar": {
+        "today": "DANAS"
+    },
+    "datetimepicker": {
+        "date": "Datum",
+        "time": "Vrijeme",
+        "cancel": "Odustani",
+        "set": "Postavi"
+    },
+    "timepicker": {
+        "now": "SADA",
+        "selectNow": "Odaberi trenutno vrijeme"
+    },
+    "dropdowns": {
+        "nodata": "Nema zapisa za prikaz."
+    },
+    "grid": {
+        "noRecords": "Nema zapisa za prikaz.",
+        "pagerFirstPage": "Idi na prvu stranicu",
+        "pagerPreviousPage": "Idi na prethodnu stranicu",
+        "pagerNextPage": "Idi na sljedeću stranicu",
+        "pagerLastPage": "Idi na zadnju stranicu",
+        "pagerPage": "Stranica",
+        "pagerOf": "od",
+        "pagerItems": "zapisa",
+        "pagerInfo": "{0} - {1} od {2} zapisa",
+        "pagerItemsPerPage": "zapisa po stranici",
+        "filterEqOperator": "Jednak je",
+        "filterNotEqOperator": "Nije jednak",
+        "filterIsNullOperator": "Je nedefiniran",
+        "filterIsNotNullOperator": "Nije nedefiniran",
+        "filterStartsWithOperator": "Počinje s",
+        "filterEndsWithOperator": "Završava s",
+        "filterContainsOperator": "Sadrži",
+        "filterNotContainsOperator": "Ne sadrži",
+        "filterIsEmptyOperator": "Je prazan",
+        "filterIsNotEmptyOperator": "Nije prazan",
+        "filterGteOperator": "Veći ili jednak od",
+        "filterGtOperator": "Veći od",
+        "filterLteOperator": "Manji ili jednak od",
+        "filterLtOperator": "Manji od",
+        "filterIsTrue": "Je",
+        "filterIsFalse": "Nije",
+        "filterBooleanAll": "-",
+        "filterAfterOperator": "Je poslije",
+        "filterBeforeOperator": "Je prije",
+        "filterAfterOrEqualOperator": "Je poslije ili jednak",
+        "filterBeforeOrEqualOperator": "Je prije ili jednak",
+        "filterFilterButton": "Filter",
+        "filterClearButton": "Očisti filter"
+    }
+}

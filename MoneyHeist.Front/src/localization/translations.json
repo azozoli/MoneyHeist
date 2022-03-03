@@ -1,0 +1,21 @@
+{
+    "heist": ["Heist", "Heist"],
+    "heists": ["Heists", "Heists"],
+    "member": ["Member", "Member"],
+    "skills": ["Skills", "Skills"],
+    "addNew": ["Add new", "Dodaj novi"],
+    "confirm": ["Confirm", "Potvrdi"],
+    "no": ["No", "Ne"],
+    "yes": ["Yes", "Da"],
+    "edit": ["Edit", "Izmijeni"],
+    "update": ["Update", "Ažuriraj"],
+    "discard": ["Discard", "Poništi"],
+    "cancel": ["Cancel", "Odustani"],
+    "remove": ["Remove", "Ukloni"],
+    "add": ["Add", "Dodaj"],
+    "confirmDelete": ["Are you sure you want to delete", "Jeste li sigurni da želite obrisati"],
+    "name": ["Name", "Ime"],
+    "startTime": ["Start time", "Start time"],
+    "endTime": ["End time", "End time"],
+    "id": ["ID", "ID"]
+}

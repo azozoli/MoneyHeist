@@ -1,0 +1,33 @@
+ARG KESTREL_DOCKER_TAG=master
+FROM stefanscherer/node-windows:12.16.1-nanoserver-1809 as build
+
+WORKDIR C:/app
+ARG KENDO_UI_LICENSE
+ADD ["package.json", "package-lock.json", "./"]
+RUN npm install
+COPY ["src", "C:/app/src"]
+COPY ["public", "C:/app/public"]
+COPY ["tsconfig.json", "C:/app/"]
+ARG NODE_OPTIONS="--max-old-space-size=8192"
+RUN npm rebuild node-sass
+RUN npx kendo-ui-license activate
+RUN npm run build
+
+FROM bitak.adnet.local:5001/reactonkestrel:$KESTREL_DOCKER_TAG
+RUN mkdir C:\\envsubst
+RUN curl -o C:/envsubst/envsubst.exe -L https://github.com/a8m/envsubst/releases/download/v1.2.0/envsubst.exe
+WORKDIR C:/app
+COPY --from=build C:/app/build/ C:/app/ClientApp/build/
+COPY ["public-config/publicConfig.js", "C:/temp/publicConfig.js"]
+COPY ["docker-start.bat", "."]
+RUN if not exist "C:\\app\\ClientApp\\build\\config" mkdir C:\\app\\ClientApp\\build\\config
+
+ARG APP_PUBLIC_SETTINGS='${APP_PUBLIC_SETTINGS}'
+ARG ADNET_APP_TITLE=SuppliersGas
+ARG ADNET_APP_VERSION
+RUN mkdir config-template
+RUN C:\\envsubst\\envsubst.exe < C:/temp/publicConfig.js > ./config-template/publicConfig.js
+ENV ASPNETCORE_URLS=http://+:8080
+EXPOSE 8080
+
+ENTRYPOINT [ "docker-start.bat" ]
